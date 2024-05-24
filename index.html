@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Tes Samapta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: #f8f8f8;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            form {
+                padding: 15px;
+            }
+            label, input, select, button {
+                font-size: 14px;
+            }
+            table, th, td {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulir Tes Aktivitas Fisik</h1>
+    <h5>Ban 4 Sisdik Direktorat Pendidikan Kodiklatal</h5>
+    <form method="post" action="process.php">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="pangkat">Pangkat:</label>
+        <input type="text" id="pangkat" name="pangkat" required><br><br>
+
+        <label for="nrp">NRP:</label>
+        <input type="text" id="nrp" name="nrp" required><br><br>
+
+        <label for="usia">Usia:</label>
+        <input type="number" id="usia" name="usia" required><br><br>
+
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin" required>
+            <option value="pria">Pria</option>
+            <option value="wanita">Wanita</option>
+        </select><br><br>
+
+        <label for="lari">Hasil Lari 12 menit:</label>
+        <input type="number" id="lari" name="lari" required><br><br>
+
+        <label for="pull_up">Hasil Pull Up:</label>
+        <input type="number" id="pull_up" name="pull_up" required><br><br>
+
+        <label for="sit_up">Hasil Sit Up:</label>
+        <input type="number" id="sit_up" name="sit_up" required><br><br>
+
+        <label for="push_up">Hasil Push Up:</label>
+        <input type="number" id="push_up" name="push_up" required><br><br>
+
+        <label for="shuttle_run">Hasil Shuttle Run:</label>
+        <input type="number" step="0.1" id="shuttle_run" name="shuttle_run" required><br><br>
+
+        <button type="submit" name="submit">Hitung</button>
+    </form>
+</body>
+</html>
